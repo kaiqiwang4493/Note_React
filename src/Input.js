@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import './input.css'
 
 
 function Input(props) {
@@ -20,8 +21,8 @@ function Input(props) {
     }
 
     return(
-        <div>
-            <TextField id="note-input" label="Note" type="text"
+        <div className='input'>
+            <TextField className="note-input" label="Note" type="text"
                        onChange={handleTextFieldChange}
                        value={input}
             />

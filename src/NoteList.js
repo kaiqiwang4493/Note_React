@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Note from "./Note";
+import './NoteList.css';
 
 function NoteList(props) {
     const notesList = props.notes.map((note, index)=>{
